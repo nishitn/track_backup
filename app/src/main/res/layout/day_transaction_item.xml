@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/vUpperLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lineSeparatorColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/vReference"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vUpperLine" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="11"
+        android:textColor="@color/dateTextColor"
+        android:textSize="@dimen/dateTextSize"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/vReference"
+        app:layout_constraintStart_toStartOf="@id/vReference"
+        app:layout_constraintTop_toTopOf="@id/vReference" />
+
+    <TextView
+        android:id="@+id/tvDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="MON"
+        android:textColor="@color/dayTextColor"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/vReference"
+        app:layout_constraintStart_toEndOf="@+id/tvDate"
+        app:layout_constraintTop_toTopOf="@id/vReference" />
+
+    <TextView
+        android:id="@+id/tvMonth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="06"
+        android:textColor="@color/monthTextColor"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/vReference"
+        app:layout_constraintStart_toEndOf="@+id/tvDay"
+        app:layout_constraintTop_toTopOf="@id/vReference" />
+
+    <TextView
+        android:id="@+id/tvSep1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dateSeparator"
+        android:textColor="@color/monthTextColor"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/vReference"
+        app:layout_constraintStart_toEndOf="@+id/tvMonth"
+        app:layout_constraintTop_toTopOf="@id/vReference" />
+
+    <TextView
+        android:id="@+id/tvYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2022"
+        android:textColor="@color/yearTextColor"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/vReference"
+        app:layout_constraintStart_toEndOf="@+id/tvSep1"
+        app:layout_constraintTop_toTopOf="@id/vReference" />
+
+    <TextView
+        android:id="@+id/tvCurrency1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:text="@string/currencyRupee"
+        android:textColor="@color/incomeTextColor"
+        android:textSize="@dimen/moneyTextSize"
+        app:layout_constraintBottom_toBottomOf="@+id/vReference"
+        app:layout_constraintEnd_toStartOf="@id/tvIncome"
+        app:layout_constraintTop_toTopOf="@id/vReference" />
+
+    <TextView
+        android:id="@+id/tvIncome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:text="5,000.00"
+        android:textColor="@color/incomeTextColor"
+        android:textSize="@dimen/moneyTextSize"
+        app:layout_constraintBottom_toBottomOf="@+id/vReference"
+        app:layout_constraintEnd_toStartOf="@+id/tvCurrency2"
+        app:layout_constraintTop_toTopOf="@id/vReference" />
+
+    <TextView
+        android:id="@+id/tvCurrency2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:text="@string/currencyRupee"
+        android:textColor="@color/expenseTextColor"
+        android:textSize="@dimen/moneyTextSize"
+        app:layout_constraintBottom_toBottomOf="@+id/vReference"
+        app:layout_constraintEnd_toStartOf="@id/tvExpense"
+        app:layout_constraintTop_toTopOf="@id/vReference" />
+
+    <TextView
+        android:id="@+id/tvExpense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:text="25,000.00"
+        android:textColor="@color/expenseTextColor"
+        android:textSize="@dimen/moneyTextSize"
+        app:layout_constraintBottom_toBottomOf="@+id/vReference"
+        app:layout_constraintEnd_toStartOf="@+id/tvCurrency3"
+        app:layout_constraintTop_toTopOf="@id/vReference" />
+
+    <TextView
+        android:id="@+id/tvCurrency3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:text="@string/currencyRupee"
+        android:textColor="@color/totalTextColor"
+        android:textSize="@dimen/moneyTextSize"
+        app:layout_constraintBottom_toBottomOf="@+id/vReference"
+        app:layout_constraintEnd_toStartOf="@id/tvTotal"
+        app:layout_constraintTop_toTopOf="@id/vReference" />
+
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="-20,000.00"
+        android:textColor="@color/totalTextColor"
+        android:textSize="@dimen/moneyTextSize"
+        app:layout_constraintBottom_toBottomOf="@+id/vReference"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/vReference" />
+
+    <View
+        android:id="@+id/vBottomLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lineSeparatorColor"
+        app:layout_constraintBottom_toTopOf="@id/rvTransactionItem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vReference" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTransactionItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vBottomLine" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

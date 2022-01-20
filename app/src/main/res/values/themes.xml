@@ -1,0 +1,13 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.Learnk" parent="Theme.AppCompat.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="android:windowBackground">@color/dark_grey</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/mild_red</item>
+        <item name="colorSecondaryVariant">@color/mild_red</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

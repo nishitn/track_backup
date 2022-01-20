@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dateTextSize">24sp</dimen>
+    <dimen name="moneyTextSize">18sp</dimen>
+    <dimen name="noteTextSize">18sp</dimen>
+    <dimen name="categoryTextSize">20sp</dimen>
+    <dimen name="entityTextSize">20sp</dimen>
+</resources>
