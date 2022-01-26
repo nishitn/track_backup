@@ -7,8 +7,6 @@ A
 gradle.properties,2\a\2afbb999f001938c88fa43fc2ef52abf0f8213e4
 ?
 settings.gradle,0\5\05efc8b1657769a27696d478ded1e95f38737233
-X
-(gradle/wrapper/gradle-wrapper.properties,f\b\fbe448ebfc3eb2d4e308f6b8b043666f5b57235e
 ;
 gradlew.bat,2\a\2a45a911a8f1836b0b6c5b758962572012d8f8c3
 7
@@ -21,3 +19,12 @@ F
 app/proguard-rules.pro,9\e\9e08934d811afe28fbc77aaa3c0d747b94348db9
 f
 6app/src/test/java/com/nishit/learnk/ExampleUnitTest.kt,5\d\5d6fafb4c09b0adf0c235a04a651e8552e566c59
+i
+9app/src/main/java/com/nishit/learnk/TransactionAdapter.kt,9\4\94e51706c9fd4629ed1b76736f2642e97ef57f16
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
+m
+=app/src/main/java/com/nishit/learnk/AddTransactionActivity.kt,f\0\f0d8ad7bd3a86e6a497318e03585cca85415d305
+@
+app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
