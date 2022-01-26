@@ -1,0 +1,52 @@
+{
+    "entities": [
+        {
+            "id": "en_eb3dc0ad-4308-4e0d-b0cf-258d32920817",
+            "name": "UPI"
+        },
+        {
+            "id": "en_c8e5e1c8-f1df-4dc4-be29-95792747e8d2",
+            "name": "Card"
+        },
+        {
+            "id": "en_e001d8f8-040c-463d-acea-66ada3dd262f",
+            "name": "NEFT-IMPS"
+        },
+        {
+            "id": "en_92e34869-7dc0-4e59-92eb-af125a53e0e2",
+            "name": "Wallet"
+        },
+        {
+            "id": "en_06d492a6-eb25-4bb6-bc54-9e160dcf356f",
+            "name": "Food Wallet"
+        },
+        {
+            "id": "en_100c842f-5473-47c1-92bb-51086b2d593d",
+            "name": "Mummy"
+        },
+        {
+            "id": "en_4ed2ac34-0341-44e5-bbaf-c27350032519",
+            "name": "Pappa"
+        },
+        {
+            "id": "en_73199242-048d-4cc3-9f9a-984650bbec6e",
+            "name": "Shashank"
+        },
+        {
+            "id": "en_da712a80-9032-49ab-9014-df5d81a0fa18",
+            "name": "Nakul"
+        },
+        {
+            "id": "en_6b28367a-5bf9-4fe1-a158-e32095fa542e",
+            "name": "Naman"
+        },
+        {
+            "id": "en_8ddb3100-a53f-47ef-9427-aefd65a1dc4e",
+            "name": "Food"
+        },
+        {
+            "id": "en_c1dfae1e-54d4-49e6-9440-a6b647423450",
+            "name": "Watch"
+        }
+    ]
+}

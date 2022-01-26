@@ -3,4 +3,14 @@
     <string name="add_transaction">Add Transaction</string>
     <string name="currencyRupee">\u20B9</string>
     <string name="dateSeparator">.</string>
+    <string name="dateLabel">Date</string>
+    <string name="fromLabel">From</string>
+    <string name="toLabel">To</string>
+    <string name="categoryLabel">Category</string>
+    <string name="noteLabel">Note</string>
+    <string name="chapterLabel">Class</string>
+    <string name="entityClassLabel">Class</string>
+    <string name="entityLabel">Entity</string>
+    <string name="timeLabel">Time</string>
+    <string name="tagsLabel">Tags</string>
 </resources>

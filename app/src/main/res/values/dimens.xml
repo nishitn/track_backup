@@ -5,4 +5,5 @@
     <dimen name="noteTextSize">18sp</dimen>
     <dimen name="categoryTextSize">20sp</dimen>
     <dimen name="entityTextSize">20sp</dimen>
+    <dimen name="addTransactionLabel">20sp</dimen>
 </resources>

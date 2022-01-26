@@ -4,11 +4,16 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.nishit.learnk.model.Currency
+import com.nishit.learnk.model.Transaction
 import kotlinx.android.synthetic.main.transaction_item.view.*
 
 class TransactionAdapter(
-    private val transactionItems: MutableList<TransactionItem>
+    private val transactionItems: List<Transaction>
 ) : RecyclerView.Adapter<TransactionAdapter.TransactionViewHolder>() {
+
+    private val sortedTransactions: List<Transaction> =
+        transactionItems.sortedByDescending { transaction -> transaction.date }
 
     class TransactionViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
 
@@ -23,13 +28,15 @@ class TransactionAdapter(
     }
 
     override fun onBindViewHolder(holder: TransactionViewHolder, position: Int) {
-        val transactionItem = transactionItems[position]
+        val transactionItem = sortedTransactions[position]
+        val currency = Currency.values().firstOrNull { currency -> currency.code == transactionItem.currency }
+            ?: throw IllegalArgumentException("Transaction currency ${transactionItem.currency} is not available in currency list")
         holder.itemView.apply {
-            tvFrom.text = transactionItem.from
-            tvTo.text = transactionItem.to
+            tvFrom.text = transactionItem.fromEntityClass
+            tvTo.text = transactionItem.toEntityClass
             tvCategory.text = transactionItem.category
             tvNote.text = transactionItem.note
-            tvCurrency.text = transactionItem.currency
+            tvCurrency.text = currency.symbol
             tvAmount.text = transactionItem.amount.toString()
         }
     }
